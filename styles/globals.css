@@ -1,0 +1,46 @@
+:root {
+  --mainGreen: #3aafa9;
+  --lightGreen: #addedc;
+  --footerGreen: #e4f5f4;
+  --NavContact: #17242a;
+  --NavContactFont: #fff;
+  --paraStyle1: #d2d3d5;
+  --paraStyle2: #e4f5f4;
+
+  --printContentOl:#addedc;
+  --btnColor:#fff;
+  --btnDisabledColor:#666666;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
+a:hover {
+  color: #17242a;
+}
+
+.top {
+  z-index: 10000;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+}

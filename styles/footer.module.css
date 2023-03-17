@@ -1,0 +1,116 @@
+.grid {
+  display: grid;
+  margin: 0;
+  padding: 0;
+  grid-template-columns: repeat(4, minmax(25%, auto));
+  width: 100%;
+  background-color: var(--footerGreen);
+  text-transform: uppercase;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  text-align: left;
+  border-radius: var(--border-radius);
+  background: rgba(var(--card-rgb), 0);
+  border: 1px solid rgba(var(--card-border-rgb), 0);
+  transition: background 200ms, border 200ms;
+}
+
+.card span {
+  display: inline-block;
+  transition: transform 200ms;
+}
+
+.card h1 {
+  text-align: center;
+  font-size: 5rem;
+  margin: 0.5rem;
+  color: #3aafa9;
+}
+
+.card p {
+  text-align: center;
+  opacity: 0.6;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.card ul {
+  margin-left: 20px;
+  text-decoration: none;
+}
+.card ul li {
+  text-transform: capitalize;
+  opacity: 0.6;
+  font-size: 1rem;
+  line-height: 2.5rem;
+  list-style-type: none;
+}
+
+.card ul li a {
+  color: #17242a;
+  font-size: 1rem;
+}
+
+.card ul li a:hover {
+  color: #3aafa9;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: 1ms;
+}
+
+.copyright {
+  padding-top: 10px;
+  justify-content: center;
+  height: 40px;
+  text-align: center;
+  display: flex;
+  background-color: #d4d4d4;
+  font-size: small;
+}
+.copyright .containerCopyright {
+  width: 50%;
+}
+
+.copyright .containerCopyright ul li {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  display: inline-block;
+  padding-left: 20px;
+}
+
+.copyright a {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
+.copyright a:hover {
+  font-weight: bold;
+  color: #17242a !important;
+}
+@media (max-width: 858px) {
+  .grid {
+    display: block;
+  }
+  .card h1 {
+    text-align: center;
+    font-size: 5rem;
+    margin: 0.5rem;
+    color: #3aafa9;
+  }
+
+  .card p {
+    text-align: center;
+    opacity: 0.6;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  .card ul {
+    margin-left: 60px;
+    text-decoration: none;
+  }
+  .copyright {
+    height: fit-content;
+  }
+}

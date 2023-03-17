@@ -1,0 +1,103 @@
+.grid {
+  display: grid;
+  margin: 0;
+  padding: 0px 50px;
+  grid-template-columns: repeat(2, minmax(25%, auto));
+  width: 100%;
+  background-color: #ffffff80;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.computers {
+  padding: 20px;
+}
+.computers h3 {
+  color: #3aafa9;
+  font-weight: 800;
+}
+.computers span {
+  font-size: 2rem;
+  font-weight: 800;
+}
+.computers button {
+  margin: 5px;
+  padding: 10px;
+  font-size: 1rem;
+  width: auto;
+  border: none;
+  cursor: pointer;
+  background-color: #3aafa9;
+  color: #e4f5f4;
+  border-radius: 10px;
+}
+
+.computers button:hover {
+  background-color: #17242a;
+  transition: 0.7s;
+}
+.printers {
+  padding: 20px;
+}
+.printers h3 {
+  color: #17242a;
+  font-weight: 800;
+}
+.printers button {
+  margin: 5px;
+  padding: 10px;
+  font-size: 1rem;
+  width: fit-content;
+  border: none;
+  cursor: pointer;
+  background-color: #17242a;
+  color: #e4f5f4;
+  border-radius: 10px;
+}
+
+.printers button:hover {
+  background-color: #3aafa9;
+  transition: 0.7s;
+}
+.printers span {
+  color: #3aafa9;
+  font-size: 2rem;
+  font-weight: 800;
+}
+.imageContainer {
+  width: 100%;
+  position: unset !important;
+}
+
+.image {
+  object-fit: contain;
+  width: 100% !important;
+  position: relative !important;
+  height: unset !important;
+}
+
+@media (max-width: 700px) {
+  .grid {
+    display: block;
+  }
+
+  .computers h1 {
+    font-size: 1.5rem;
+  }
+  .computers span {
+    font-size: 1.5rem;
+  }
+  .computers button {
+    width: auto;
+    font-size: medium;
+  }
+  .printers h1 {
+    font-size: 1.5rem;
+  }
+  .printers span {
+    font-size: 1.5rem;
+  }
+  .printers button {
+    font-size: medium;
+  }
+}

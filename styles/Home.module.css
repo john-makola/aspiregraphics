@@ -1,0 +1,152 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6rem;
+  min-height: 100vh;
+}
+
+.description {
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+  font-size: 0.85rem;
+  max-width: var(--max-width);
+  width: 100%;
+  z-index: 2;
+  font-family: var(--font-mono);
+}
+
+.container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  margin-top: 80px;
+}
+
+.motivation {
+  margin: 25px 5px ;
+  padding: 1px;
+  width: 40%;
+}
+
+.motivation h5 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.motivation p {
+  font-size: 0.8rem !important;
+  font-style: italic;
+  font-weight: bold;
+  color: var(--mainGreen);
+  text-align: right;
+}
+.description a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.description p {
+  position: relative;
+  margin: 0;
+  padding: 1rem;
+  background-color: rgba(var(--callout-rgb), 0.5);
+  border: 1px solid rgba(var(--callout-border-rgb), 0.3);
+  border-radius: var(--border-radius);
+}
+
+.code {
+  font-weight: 700;
+  font-family: var(--font-mono);
+}
+
+.grid {
+  display: grid;
+  margin: 0;
+  padding: 0;
+  grid-template-columns: repeat(4, minmax(25%, auto));
+  width: 100%;
+}
+
+.card {
+  padding: 1rem 1.2rem;
+  border-radius: var(--border-radius);
+  background: rgba(var(--card-rgb), 0);
+  border: 1px solid rgba(var(--card-border-rgb), 0);
+  transition: background 200ms, border 200ms;
+}
+
+.card span {
+  display: inline-block;
+  transition: transform 200ms;
+}
+
+.card h2 {
+  font-weight: 600;
+  margin-bottom: 0.7rem;
+}
+
+.card p {
+  margin: 0;
+  opacity: 0.6;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  max-width: 30ch;
+}
+
+.imageContainer {
+  width: 100%;
+  position: unset !important;
+}
+
+.image {
+  object-fit: cover;
+  width: 100% !important;
+  position: relative !important;
+  height: unset !important;
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+  .container {
+    display: block;
+    padding: 5px;
+  }
+  .container p {
+    font-size: 30px;
+  }
+  .motivation {
+    width: 100%;
+  }
+  .content {
+    padding: 1rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    margin-bottom: 120px;
+    max-width: 320px;
+    text-align: center;
+  }
+  .imageContainer {
+    width: 100%;
+  }
+}
+
+.imageContainer {
+  width: 100%;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}

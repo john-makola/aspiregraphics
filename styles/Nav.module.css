@@ -1,0 +1,131 @@
+.Navbar {
+  background-color: var(--mainGreen);
+  width: 100%;
+  height: 50px;
+  display: flex;
+}
+.Navbar a {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
+.Navbar a:hover {
+  font-weight: bold;
+  color: var(--NavContact) !important;
+}
+.Navbar .leftSide {
+  flex: 70%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.Navbar .rightSide {
+  flex: 30%;
+}
+
+.Navbar .leftSide button {
+  display: none;
+}
+
+.Navbar .leftSide #hidden {
+  display: block;
+}
+
+.Navbar .leftSide .links ul {
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.Navbar .leftSide .links ul li {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  color: antiquewhite;
+  display: inline-block;
+  padding-left: 20px;
+}
+
+.imageContainer {
+  padding: 5px 20px;
+  width: 25%;
+  position: unset !important;
+}
+
+.image {
+  object-fit: contain;
+  width: 70% !important;
+  position: relative !important;
+  height: unset !important;
+}
+.Navbar .rightSide {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  .Navbar .leftSide {
+  }
+  .Navbar .rightSide {
+    display: none;
+  }
+  .Navbar .imageContainer {
+    width: 55%;
+  }
+  .Navbar .image {
+    align-items: center;
+    width: 100%;
+  }
+}
+
+@media (max-width: 650px) {
+  .Navbar .leftSide button {
+    margin: 10px 10px;
+    display: flex;
+    width: fit-content;
+    font-size: 1.5rem;
+    color: var(--mainGreen);
+    cursor: pointer;
+  }
+  .Navbar .leftSide {
+    background-color: var(--mainGreen);
+    align-items: left;
+    display: flex;
+  }
+  .Navbar .leftSide .links {
+    display: none;
+  }
+
+  .Navbar .imageContainer {
+    padding-top: 0;
+    margin-left: 10px;
+    width: 55%;
+  }
+  .Navbar.image {
+    align-items: center;
+    width: 40%;
+  }
+
+  .Navbar .leftSide #hidden {
+    position: absolute;
+    background-color: var(--mainGreen);
+    left: 0px;
+    top: 90px;
+    width: 50%;
+    height: 180%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Navbar .leftSide #hidden ul li {
+    font-size: 1rem;
+    display: block;
+    padding-left: 50px;
+    line-height: 1.5rem;
+  }
+  .Navbar .rightSide {
+    display: none;
+  }
+
+  .faBars {
+    border: none;
+    outline: none;
+  }
+}

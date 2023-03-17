@@ -1,0 +1,87 @@
+.grid {
+  display: grid;
+  margin: 0;
+  padding: 0;
+  grid-template-columns: repeat(2, minmax(25%, auto));
+  width: 100%;
+}
+.navContacts {
+  padding: 10px;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  background-color: var(--NavContact);
+  color: var(--NavContactFont);
+}
+
+.navContacts ul {
+  margin-left: 20px;
+}
+
+.navContacts ul li {
+  font-size: small;
+  font-weight: 300;
+  display: inline-block;
+  padding-left: 20px;
+}
+.navContacts a {
+  color: inherit;
+  font-weight: 500;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+.navContacts a:hover {
+  color: var(--mainGreen) !important;
+}
+.imageContainer {
+  padding: 5px;
+  width: 100%;
+  position: unset !important;
+}
+
+.image {
+  object-fit: contain;
+  width: 100% !important;
+  position: relative !important;
+  height: unset !important;
+}
+
+.navSocial {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  background-color: var(--NavContact);
+}
+
+.navSocial ul {
+  list-style-type: none;
+  margin-left: 20px;
+}
+
+.navSocial ul li {
+  font-size: larger;
+  font-weight: 300;
+  display: inline-block;
+  padding-left: 20px;
+}
+
+@media (max-width: 700px) {
+  .navContacts {
+    display: flex;
+    padding: 2px 20px;
+  }
+  .imageContainer {
+    width: 150%;
+  }
+  .image {
+    width: 100%;
+  }
+  .navContacts ul {
+    margin-left: 5px;
+  }
+  .navContacts ul li {
+    display: flex;
+    font-size: small;
+  }
+}

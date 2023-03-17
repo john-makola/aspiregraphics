@@ -1,0 +1,140 @@
+.container {
+  margin-top: 70px;
+  padding: 50px;
+  justify-content: center;
+  align-items: center;
+}
+.container h1 {
+  text-align: center;
+}
+.container p {
+  text-align: center;
+  line-height: 1.5rem;
+}
+
+.grid {
+  display: grid;
+  margin-top: 10px;
+  padding: 20px;
+  grid-template-columns: repeat(2, minmax(35%, auto));
+  width: 100%;
+}
+
+.content {
+  padding: 10px;
+  justify-content: center;
+}
+
+.content p {
+  text-align: justify;
+  line-height: 1.5rem;
+  font-size: 1rem;
+  color: rgb(var(--foreground-rgb));
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+.content h2 {
+  padding: 20px 0px;
+  text-align: center;
+}
+#paraStyle1 {
+  background-color: var(--paraStyle1);
+  padding: 20px;
+}
+#paraStyle2 {
+  background-color: var(--paraStyle2);
+  padding: 20px;
+}
+
+.content ul {
+  background-color: var(--printContentOl);
+  padding: 20px 100px;
+  list-style-type: none;
+}
+.content ul li {
+  justify-content: center;
+  text-align: justify;
+  line-height: 4.5rem;
+  font-size: 30px;
+}
+
+.content ol {
+  background-color: var(--printContentOl);
+  padding: 20px 100px;
+}
+.content ol li {
+  justify-content: center;
+  text-align: justify;
+  line-height: 4.5rem;
+}
+
+.button {
+  margin-top: 5px;
+  width: fit-content;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  color: var(--btnColor);
+  font-size: 1rem;
+  cursor: pointer;
+  justify-content: right;
+  align-items: flex-end;
+  background-color: var(--NavContact);
+}
+.button:hover {
+  align-items: flex-end;
+  background-color: var(--mainGreen);
+  transform: 0.75s;
+}
+
+.imageContainer {
+  margin: 15px 15px;
+  width: 100%;
+  position: unset !important;
+}
+
+.image {
+  object-fit: contain;
+  width: 80% !important;
+  position: relative !important;
+  height: unset !important;
+}
+
+@media (max-width: 858px) {
+  .grid {
+    display: block;
+    padding: 5px;
+  }
+  .container h1 {
+    font-size: large;
+  }
+  .container p {
+    font-size: 0.85rem;
+  }
+  .content {
+    padding: 2px;
+  }
+  .content ul {
+    background-color: #addedc;
+    padding: 10px 50px;
+    list-style-type: none;
+  }
+  .content ol {
+    background-color: #addedc;
+    padding: 10px 50px;
+    list-style-type: none;
+  }
+  #paraStyle1 {
+    padding: 10px;
+  }
+  #paraStyle2 {
+    padding: 10px;
+  }
+  .button {
+    margin-top: 2.5px;
+    font-size: 0.85rem;
+  }
+  .faq {
+    display: none;
+  }
+}
