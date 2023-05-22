@@ -6,7 +6,7 @@ Established in 2015, ASP is based in Kenya and provides solutions to over 50 cli
 ASP serves a wide range of business clients from: Individuals, Small & Medium based business, Corporate, Government and Non Governmental Institutions.
 
 ### Software Development Solutions
-ASP help our clients build, design, develop, test and Maintain Software Solutions for different markets including:
+ASP help its clients to build, design, develop, test and Maintain Software Solutions for different markets including:
 
 #### Software Development
 Our Range of Products includes: MIS - Web Apps, Mobile Apps, CRM Products, Websites, Desktop Applications, APIs.
